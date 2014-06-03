@@ -117,6 +117,15 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+pre {
+  font-size: 0.75em;
+  background-color: #23241f;
+  color: #f8f8f2;
+  padding: 1em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
 /* CONTAINER
  * -------------------- */
 

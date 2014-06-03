@@ -1,3 +1,6 @@
 hightlighter: pygments
 markdown: kramdown
 permalink: /blog/:title
+
+kramdown:
+  use_coderay: true
