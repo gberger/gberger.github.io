@@ -1,0 +1,109 @@
+---
+layout: page
+title: Humanas Generator
+name: humanas-generator
+---
+
+<style>
+	#btn-generate, #sentence {
+		font-size: 1.5em;
+	}
+</style>
+
+<p>
+	<button id="btn-generate" class="pure-button pure-button-primary button-xlarge">Gerar</button>
+</p>
+<blockquote id="sentence"></blockquote>
+
+<script>
+	var ಠ_ಠ = {
+		pre: [
+			"Optativa em",
+			"Eletiva em"
+		],
+		terms: [
+			"História",
+			"Arte",
+			"Ciência",
+			"Filosofia",
+			"Metafísica",
+			"Sociologia",
+			"Teoria",
+			"Ética",
+			"Antropologia"
+		],
+		time: [
+			"Medieval",
+			"Moderna",
+			"Contemporânea",
+			"Pós-Moderna",
+			"Renascentista",
+			"Pré-Histórica"
+		],
+		places: [
+			"Brasileira",
+			"Americana",
+			"Européia",
+			"Britânica",
+			"Russa",
+			"Africana",
+			"Ocidental",
+			"Oriental"
+		],
+		numbers: [
+			"1", "2", "3", "4", "7", "9",
+			"I", "II", "III", "V"
+		]
+	};
+
+	var sample = function(arr, except) {
+		var el;
+		do {
+			el = arr[Math.floor(Math.random()*arr.length)];
+		} while(el === except);
+		return el;
+	};
+
+	var chance = function(c) {
+		return Math.random()*100 < c;
+	};
+
+	if (!Array.prototype.map) {
+		Array.prototype.map = function (fn) {
+			var arr = [];
+			for(var i = 0, l = this.length; i < l; i++){
+				arr[i] = fn(this[i]);
+			}
+			return arr;
+		};
+	}
+
+	var generate = function() {
+		var sentence = '';
+		if(chance(15)){
+			sentence += sample(ಠ_ಠ.pre) + ' ';
+		}
+		var term1 = sample(ಠ_ಠ.terms);
+		var term2 = sample(ಠ_ಠ.terms, term1);
+		sentence += term1 + ' da ' + term2;
+		if(chance(15)){
+			sentence += ' da ' + sample(ಠ_ಠ.terms, term2);
+		}
+		if(chance(30)){
+			sentence += ' ' + sample(ಠ_ಠ.time) + ' ' + sample(ಠ_ಠ.places);
+		} else {
+			if(chance(50)){
+				sentence += ' ' + sample(ಠ_ಠ.time);
+			} else {
+				sentence += ' ' + sample(ಠ_ಠ.places);
+			}
+		}
+		if(chance(50)){
+			sentence += ' ' + sample(ಠ_ಠ.numbers);
+		}
+
+		document.getElementById('sentence').innerHTML = sentence;
+	};
+
+	document.getElementById('btn-generate').onclick = generate;
+</script>
