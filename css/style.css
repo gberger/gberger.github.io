@@ -169,25 +169,29 @@ article img {
 /* ARCHIVE
  * -------------------- */
 
-.posts {
+.archive {
   margin: 20px 0;
   color: #666;
 }
 
-.posts li {
+.archive li {
   margin-top: 15px;
 }
 
-.posts a.title {
+.archive a.title,
+.archive a.rss {
   text-decoration: none;
   color: #1A1A1A;
 }
 
-.posts a.title:hover {
+.archive a.title:hover,
+.archive a.rss:hover {
   text-decoration: underline;
 }
 
-.posts .title, .posts .date {
+.archive .title,
+.archive .date,
+.archive .rss {
   font-weight: bold;
 }
 
