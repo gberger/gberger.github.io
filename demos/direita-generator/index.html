@@ -4,10 +4,16 @@ title: Direita Generator
 name: direita-generator
 ---
 
+<style>
+	#btn-generate, #sentence {
+		font-size: 1.5em;
+	}
+</style>
+
 <p>
-	<button onclick="generate();" class="btn">Gerar</button>
+	<button id="btn-generate" class="pure-button pure-button-primary button-xlarge">Gerar</button>
 </p>
-<h2 id="sentence"></h2>
+<blockquote id="sentence"></blockquote>
 
 <script>
 	var Ѧ = [
@@ -67,11 +73,11 @@ name: direita-generator
 			"a liberdade",
 			"os bons costumes"
 		]
-	]
+	];
 
 	var sample = function(arr) {
 		return arr[Math.floor(Math.random()*arr.length)];
-	}
+	};
 
 	if (!Array.prototype.map) {
 		Array.prototype.map = function (fn) {
@@ -86,5 +92,7 @@ name: direita-generator
 	var generate = function() {
 		var sentence = Ѧ.map(sample).join(' ');
 		document.getElementById('sentence').innerHTML = sentence;
-	}
+	};
+
+	document.getElementById('btn-generate').onclick = generate;
 </script>
