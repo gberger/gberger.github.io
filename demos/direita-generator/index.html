@@ -1,0 +1,90 @@
+---
+layout: page
+title: Direita Generator
+name: direita-generator
+---
+
+<p>
+	<button onclick="generate();" class="btn">Gerar</button>
+</p>
+<h2 id="sentence"></h2>
+
+<script>
+	var a = [
+		[
+			"A miséria",
+			"A inflação",
+			"O Golpe de 1964",
+			"A violência",
+			"A crise",
+			"O crime",
+			"O nazismo",
+			"O Bolsa Família",
+			"O problema da educação",
+			"A corrupção"
+		], [
+			"é uma invenção",
+			"é uma estratégia",
+			"é uma manobra",
+			"é um complô",
+			"é culpa",
+			"é uma criação",
+			"é uma conspiração",
+			"é uma forma orquestrada",
+			"é a doutrinação ideológica",
+			"é a uma articulação"
+		], [
+			"do PT",
+			"do comunismo",
+			"dos esquerdopatas",
+			"da Dilma",
+			"do socialismo",
+			"do Estado",
+			"da ditadura gay",
+			"da esquerda caviar",
+			"dos vândalos",
+			"das feminazis"
+		], [
+			"para deslegitimar",
+			"para vandalizar",
+			"para desmoralizar",
+			"para destruir",
+			"para regular",
+			"para ameaçar",
+			"para superar",
+			"para roubar",
+			"para aterrorizar",
+			"para transgredir"
+		], [
+			"a economia",
+			"o livre mercado",
+			"a classe média",
+			"a propriedade privada",
+			"a nação",
+			"o progresso",
+			"a família",
+			"a democracia",
+			"a liberdade",
+			"os bons costumes"
+		]
+	]
+
+	var sample = function(arr) {
+		return arr[Math.floor(Math.random()*arr.length)];
+	}
+
+	if (!Array.prototype.map) {
+		Array.prototype.map = function (fn) {
+			var arr = [];
+			for(var i = 0, l = this.length; i < l; i++){
+				arr[i] = fn(this[i]);
+			}
+			return arr;
+		};
+	}
+
+	var generate = function() {
+		var sentence = a.map(sample).join(' ');
+		document.getElementById('sentence').innerHTML = sentence;
+	}
+</script>
