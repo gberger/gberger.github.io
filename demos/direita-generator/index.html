@@ -76,6 +76,9 @@ name: direita-generator
 	];
 
 	var choose = function(n) {
+		if(+n !== n) {
+			n = n.length;
+		}
 		return Math.floor(Math.random()*n);
 	};
 
@@ -108,7 +111,9 @@ name: direita-generator
 	};
 
 	var recover = function(){
-		var indexes = window.location.hash.substring(1).split(',');
+		var indexes = window.location.hash.substring(1).split(',').map(function(i){
+			return parseInt(i, 10);
+		});;
 		if(indexes.length === Ѧ.length) {
 			var sentence = sentenceFromIndexes(indexes);
 			document.getElementById('sentence').innerHTML = sentence;

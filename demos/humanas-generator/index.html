@@ -16,59 +16,81 @@ name: humanas-generator
 <blockquote id="sentence"></blockquote>
 
 <script>
-	var ಠ_ಠ = {
-		pre: [
-			"Optativa em",
-			"Eletiva em",
-			"Seminários Especiais em",
-			"Tópicos Especiais em"
-		],
-		terms: [
-			"História",
-			"Arte",
-			"Ciência",
-			"Filosofia",
-			"Metafísica",
-			"Sociologia",
-			"Teoria",
-			"Ética",
-			"Antropologia",
-			"Lógica"
-		],
-		post: [
-			"Freudiana",
-			"Marxista"
-		],
-		time: [
-			"Medieval",
-			"Moderna",
-			"Contemporânea",
-			"Pós-Moderna",
-			"Renascentista",
-			"Pré-Histórica"
-		],
-		places: [
-			"Brasileira",
-			"Americana",
-			"Européia",
-			"Britânica",
-			"Russa",
-			"Africana",
-			"Ocidental",
-			"Oriental"
-		],
-		numbers: [
-			"1", "2", "3", "4", "7", "9",
-			"I", "II", "III", "V"
-		]
-	};
+	var terms = [
+		"História",
+		"Arte",
+		"Ciência",
+		"Filosofia",
+		"Metafísica",
+		"Sociologia",
+		"Teoria",
+		"Ética",
+		"Antropologia",
+		"Lógica"
+	];
 
-	var sample = function(arr, except) {
-		var el;
-		do {
-			el = arr[Math.floor(Math.random()*arr.length)];
-		} while(el === except);
-		return el;
+	var ಠ_ಠ = [
+		{
+			chance: 25,
+			values: [
+				"Optativa em",
+				"Eletiva em",
+				"Seminários Especiais em",
+				"Tópicos Especiais em"
+			]
+		}, {
+			chance: 100,
+			values: terms
+		}, {
+			chance: 95,
+			prepend: 'da ',
+			values: terms
+		}, {
+			chance: 15,
+			prepend: 'da ',
+			values: terms
+		}, {
+			chance: 20,
+			values: [
+				"Freudiana",
+				"Marxista"
+			]
+		}, {
+			chance: 66,
+			values: [
+				"Medieval",
+				"Moderna",
+				"Contemporânea",
+				"Pós-Moderna",
+				"Renascentista",
+				"Pré-Histórica"
+			]
+		}, {
+			chance: 66,
+			values: [
+				"Brasileira",
+				"Americana",
+				"Européia",
+				"Britânica",
+				"Russa",
+				"Africana",
+				"Ocidental",
+				"Oriental"
+			]
+		}, {
+			chance: 50,
+			values: [
+				"1", "2", "3", "4", "7", "9",
+				"I", "II", "III", "V"
+			]
+		}
+	];
+
+	var choose = function(n) {
+		if(+n !== n) {
+			n = n.length;
+		}
+		return Math.floor(Math.random()*n);
 	};
 
 	var chance = function(c) {
@@ -85,38 +107,44 @@ name: humanas-generator
 		};
 	}
 
-	var generate = function() {
-		var sentence = '';
-		if(chance(25)){
-			sentence += sample(ಠ_ಠ.pre) + ' ';
-		}
-		var term1 = sample(ಠ_ಠ.terms);
-		var term2 = sample(ಠ_ಠ.terms, term1);
-		sentence += term1 + ' da ' + term2;
-		if(chance(15)){
-			sentence += ' da ' + sample(ಠ_ಠ.terms, term2);
-		}
-		if(chance(20)){
-			sentence += ' ' + sample(ಠ_ಠ.post)
-		}
-		if(chance(30)){
-			sentence += ' ' + sample(ಠ_ಠ.time) + ' ' + sample(ಠ_ಠ.places);
-		} else {
-			if(chance(50)){
-				sentence += ' ' + sample(ಠ_ಠ.time);
-			} else {
-				sentence += ' ' + sample(ಠ_ಠ.places);
-			}
-		}
-		if(chance(50)){
-			sentence += ' ' + sample(ಠ_ಠ.numbers);
-		}
+	var sentenceFromIndexes = function(indexes) {
+		return indexes.map(function(idx, i) {
+			if(idx === -1) return '';
+			return (ಠ_ಠ[i].prepend || '') + ಠ_ಠ[i].values[idx];
+		}).join(' ').replace(/\s{2,}|^\s|\s$/, ' ');
+	};
 
-		document.getElementById('sentence').innerHTML = sentence;
+	var generateIndexes = function() {
+		return ಠ_ಠ.reduce(function(indexes, thing) {
+			if(chance(thing.chance)) {
+				var tentative;
+				do {
+					tentative = choose(thing.values);
+				} while(sentenceFromIndexes(indexes).indexOf(thing.values[tentative]) !== -1);
+				indexes.push(tentative);
+			} else {
+				indexes.push(-1);
+			}
+			return indexes;
+		}, [])
 	};
 
 	document.getElementById('btn-generate').onclick = function(){
-		generate();
-		_gaq.push(['_trackEvent', 'demo/humanas-generator', 'generate']);
-	}
+		var indexes = generateIndexes();
+		var sentence = sentenceFromIndexes(indexes);
+		document.getElementById('sentence').innerHTML = sentence;
+		window.location.hash = indexes;
+		_gaq.push(['_trackEvent', 'demo/direita-generator', 'generate']);
+	};
+
+	var recover = function(){
+		var indexes = window.location.hash.substring(1).split(',').map(function(i){
+			return parseInt(i, 10);
+		});
+		if(indexes.length === ಠ_ಠ.length) {
+			var sentence = sentenceFromIndexes(indexes);
+			document.getElementById('sentence').innerHTML = sentence;
+		}
+	};
+	recover();
 </script>
