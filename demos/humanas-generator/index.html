@@ -115,5 +115,8 @@ name: humanas-generator
 		document.getElementById('sentence').innerHTML = sentence;
 	};
 
-	document.getElementById('btn-generate').onclick = generate;
+	document.getElementById('btn-generate').onclick = function(){
+		generate();
+		_gaq.push(['_trackEvent', 'demo/humanas-generator', 'generate']);
+	}
 </script>
