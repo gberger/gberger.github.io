@@ -129,13 +129,15 @@ name: humanas-generator
 		}, [])
 	};
 
-	document.getElementById('btn-generate').onclick = function(){
+	var generate = function(){
 		var indexes = generateIndexes();
 		var sentence = sentenceFromIndexes(indexes);
 		document.getElementById('sentence').innerHTML = sentence;
 		window.location.hash = indexes;
-		_gaq.push(['_trackEvent', 'demo/direita-generator', 'generate']);
+		_gaq.push(['_trackEvent', 'demo/humanas-generator', 'generate']);
 	};
+
+	document.getElementById('btn-generate').onclick = generate;
 
 	var recover = function(){
 		var indexes = window.location.hash.substring(1).split(',').map(function(i){
@@ -144,7 +146,10 @@ name: humanas-generator
 		if(indexes.length === ಠ_ಠ.length) {
 			var sentence = sentenceFromIndexes(indexes);
 			document.getElementById('sentence').innerHTML = sentence;
+		} else {
+			generate();
 		}
 	};
-	recover();
+
+	setTimeout(recover, 1);
 </script>

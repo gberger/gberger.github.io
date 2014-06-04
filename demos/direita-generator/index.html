@@ -102,7 +102,7 @@ name: direita-generator
 		return Array.apply(null, new Array(Ѧ.length)).map(choose.bind(null, Ѧ.length), true);
 	};
 
-	document.getElementById('btn-generate').onclick = function(){
+	var generate = function(){
 		var indexes = generateIndexes();
 		var sentence = sentenceFromIndexes(indexes);
 		document.getElementById('sentence').innerHTML = sentence;
@@ -110,14 +110,19 @@ name: direita-generator
 		_gaq.push(['_trackEvent', 'demo/direita-generator', 'generate']);
 	};
 
+	document.getElementById('btn-generate').onclick = generate;
+
 	var recover = function(){
 		var indexes = window.location.hash.substring(1).split(',').map(function(i){
 			return parseInt(i, 10);
-		});;
+		});
 		if(indexes.length === Ѧ.length) {
 			var sentence = sentenceFromIndexes(indexes);
 			document.getElementById('sentence').innerHTML = sentence;
+		} else {
+			generate();
 		}
 	};
-	recover();
+
+	setTimeout(recover, 1);
 </script>
