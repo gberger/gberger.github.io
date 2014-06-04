@@ -75,27 +75,44 @@ name: direita-generator
 		]
 	];
 
-	var sample = function(arr) {
-		return arr[Math.floor(Math.random()*arr.length)];
+	var choose = function(n) {
+		return Math.floor(Math.random()*n);
 	};
 
 	if (!Array.prototype.map) {
 		Array.prototype.map = function (fn) {
 			var arr = [];
 			for(var i = 0, l = this.length; i < l; i++){
-				arr[i] = fn(this[i]);
+				arr[i] = fn(this[i], i);
 			}
 			return arr;
 		};
 	}
 
-	var generate = function() {
-		var sentence = Ѧ.map(sample).join(' ');
-		document.getElementById('sentence').innerHTML = sentence;
+	var sentenceFromIndexes = function(indexes) {
+		return indexes.map(function(idx, i){
+			return Ѧ[i][idx];
+		}).join(' ');
+	};
+
+	var generateIndexes = function() {
+		return Array.apply(null, new Array(Ѧ.length)).map(choose.bind(null, Ѧ.length), true);
 	};
 
 	document.getElementById('btn-generate').onclick = function(){
-		generate();
+		var indexes = generateIndexes();
+		var sentence = sentenceFromIndexes(indexes);
+		document.getElementById('sentence').innerHTML = sentence;
+		window.location.hash = indexes;
 		_gaq.push(['_trackEvent', 'demo/direita-generator', 'generate']);
-	}
+	};
+
+	var recover = function(){
+		var indexes = window.location.hash.substring(1).split(',');
+		if(indexes.length === Ѧ.length) {
+			var sentence = sentenceFromIndexes(indexes);
+			document.getElementById('sentence').innerHTML = sentence;
+		}
+	};
+	recover();
 </script>
