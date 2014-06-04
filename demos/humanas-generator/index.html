@@ -19,7 +19,9 @@ name: humanas-generator
 	var ಠ_ಠ = {
 		pre: [
 			"Optativa em",
-			"Eletiva em"
+			"Eletiva em",
+			"Seminários Especiais em",
+			"Tópicos Especiais em"
 		],
 		terms: [
 			"História",
@@ -30,7 +32,12 @@ name: humanas-generator
 			"Sociologia",
 			"Teoria",
 			"Ética",
-			"Antropologia"
+			"Antropologia",
+			"Lógica"
+		],
+		post: [
+			"Freudiana",
+			"Marxista"
 		],
 		time: [
 			"Medieval",
@@ -80,7 +87,7 @@ name: humanas-generator
 
 	var generate = function() {
 		var sentence = '';
-		if(chance(15)){
+		if(chance(25)){
 			sentence += sample(ಠ_ಠ.pre) + ' ';
 		}
 		var term1 = sample(ಠ_ಠ.terms);
@@ -88,6 +95,9 @@ name: humanas-generator
 		sentence += term1 + ' da ' + term2;
 		if(chance(15)){
 			sentence += ' da ' + sample(ಠ_ಠ.terms, term2);
+		}
+		if(chance(100)){
+			sentence += ' ' + sample(ಠ_ಠ.post)
 		}
 		if(chance(30)){
 			sentence += ' ' + sample(ಠ_ಠ.time) + ' ' + sample(ಠ_ಠ.places);
