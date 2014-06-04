@@ -17,11 +17,6 @@ e.g., a tech meetup group in a certain city.
 I created **[ghurl](http://ghurl.github.io/)**, a URL shortener. My idea was
 to use GitHub issues, combined with the GitHub API, to store and retrieve the long URLs.
 
-The short URLs contain the issue number in the query string, so
-I could later retrieve them from the repo. And by using a query string,
-I effectively have a catch-all URL into a single HTML page: perfect
-for using GitHub pages for hosting the static HTML+JS+CSS files.
-
 *Here's a [URL pointing to this post](http://ghurl.github.io/?6), and here's
 the [GitHub issue](https://github.com/ghurl/db/issues/6) it refers to.*
 
@@ -35,10 +30,15 @@ The user's flow goes like this:
 3. Construct your shortened URL using **n**:
    `https://ghurl.github.io/?n`
 
-Then, when the user access the "shortened URL" (it's not really that short,
+Then, when the user accesses the "shortened URL" (it's not really that short,
 unless I buy a custom domain), I use the issue's number (from the query string)
 to send an AJAX call to the GitHub API. When it's done, I use the issue's title as the
 URL to redirect the user to.
+
+The short URLs contain the issue number in the query string, so
+I could later retrieve them from the repo. And by using a query string,
+I effectively have a catch-all URL into a single HTML page: perfect
+for using GitHub pages for hosting the static HTML+JS+CSS files.
 
 Of course, nobody should really use this service in the real world, for several reasons:
 
