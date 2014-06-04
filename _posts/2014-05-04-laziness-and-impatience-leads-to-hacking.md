@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Laziness (and impatience) leads to hacking"
+description: "Hacking has turned into an everyday skill"
 permalink: /blog/4/laziness-and-impatience-leads-to-hacking
 ---
 
