@@ -58,7 +58,11 @@ h4 {
 }
 
 strong {
-  font-weight: bold
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 p {
