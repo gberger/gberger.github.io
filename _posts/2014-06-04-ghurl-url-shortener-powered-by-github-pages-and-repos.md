@@ -5,14 +5,14 @@ description: "A URL Shortener with no back-end server"
 permalink: /blog/5/ghurl-url-shortener
 ---
 
-I was inspired by [GitHub Resumé](https://github.com/resume/resume.github.com),
-which uses an opt-in system based on starring the repository. Other sources of
-inspiration were repositories that usepull requests to maintain information about,
-e.g., a tech meetup group in a certain city.
-
-Similarly, I wanted to explore ways I could (ab)use the GitHub pages and
+I wanted to explore ways I could (ab)use the GitHub pages and
 repositores ecosystem by creating working systems that would otherwise
 need a back-end server.
+
+I was inspired by [GitHub Resumé](https://github.com/resume/resume.github.com),
+which uses an opt-in system based on starring the repository. Other sources of
+inspiration were repositories that use pull requests to maintain information about,
+e.g., a tech meetup group in a certain city.
 
 I created **[ghurl](http://ghurl.github.io/)**, a URL shortener. My idea was
 to use GitHub issues, combined with the GitHub API, to store and retrieve the long URLs.
