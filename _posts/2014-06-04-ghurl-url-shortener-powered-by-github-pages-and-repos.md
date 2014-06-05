@@ -9,20 +9,20 @@ I wanted to explore ways I could (ab)use the GitHub pages and
 repositores ecosystem by creating working systems that would otherwise
 need a back-end server.
 
-I was inspired by [GitHub Resumé](https://github.com/resume/resume.github.com),
+I was inspired by [GitHub Resumé](https://github.com/resume/resume.github.com){:target="_blank"},
 which uses an opt-in system based on starring the repository. Other sources of
 inspiration were repositories that use pull requests to maintain information about,
 e.g., a tech meetup group in a certain city.
 
-I created **[ghurl](http://ghurl.github.io/)**, a URL shortener. My idea was
+I created **[ghurl](http://ghurl.github.io/){:target="_blank"}**, a URL shortener. My idea was
 to use GitHub issues, combined with the GitHub API, to store and retrieve the long URLs.
 
 *Here's a [URL pointing to this post](http://ghurl.github.io/?6), and here's
-the [GitHub issue](https://github.com/ghurl/db/issues/6) it refers to.*
+the [GitHub issue](https://github.com/ghurl/db/issues/6){:target="_blank"} it refers to.*
 
 The user's flow goes like this:
 
-1. Create an issue on the [ghurl/db](https://github.com/ghurl/db/issues) repository.
+1. Create an issue on the [ghurl/db](https://github.com/ghurl/db/issues){:target="_blank"} repository.
    The **title** of the issue should be the URL you want to redirect to.
 
 2. Note **n**, the **issue's number**.
