@@ -160,12 +160,12 @@ pre {
 /* CONTAINER
  * -------------------- */
 
-#container {
+.container {
   background-color: rgba(245, 245, 245, 0.75);
 }
 
 @media screen and (min-width:960px) {
-  #container {
+  .container {
     position: relative;
     -webkit-transform: none;
     transform: none;
@@ -173,12 +173,12 @@ pre {
     left: auto;
     margin: 5em auto;
     width: 35em;
-    padding: 3em 4em 4em 4em;
+    padding: 3em 4em 3em 4em;
   }
 }
 
 @media screen and (max-width:959px) {
-  #container {
+  .container {
     padding: 1em;
   }
 }
