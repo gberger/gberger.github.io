@@ -1,6 +1,6 @@
 {% include top.html %}
 
-	<div class="container" class="{% if page.name %} {{page.name}} {% else %} post {% endif %}">
+	<div class="container {% if page.name %} {{page.name}} {% else %} post {% endif %}">
 		<article>
 			<h1>{{page.title}}</h1>
 			{{% if page.description %}}<h2>{{page.description}}</h2>{{% endif %}}
