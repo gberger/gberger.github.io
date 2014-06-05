@@ -2,5 +2,9 @@ hightlighter: pygments
 markdown: kramdown
 permalink: /blog/:title
 
+name: Guilherme Berger
+description: Guilherme Berger's personal site and blog
+url: http://gberger.me
+
 kramdown:
   use_coderay: true
