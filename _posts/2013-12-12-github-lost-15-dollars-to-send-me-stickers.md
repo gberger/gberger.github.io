@@ -2,6 +2,8 @@
 layout: post
 title: "GitHub lost $15 to send me stickers"
 permalink: /blog/1/github-lost-15-dollars-to-send-me-stickers
+redirect_from:
+  - /blog/1/
 ---
 
 Among the many products sold at the [Github Store](http://shop.github.com/){:target="_blank"},

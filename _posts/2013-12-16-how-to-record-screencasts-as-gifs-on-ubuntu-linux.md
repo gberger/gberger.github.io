@@ -2,6 +2,8 @@
 layout: post
 title: "How to record screencasts as GIFs on Ubuntu/Linux"
 permalink: /blog/2/how-to-record-screencasts-as-gifs-on-ubuntu-linux
+redirect_from:
+  - /blog/2/
 ---
 
 A screencast says more than a thousand pictures. That's why I like to record

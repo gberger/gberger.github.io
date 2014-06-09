@@ -2,6 +2,8 @@
 layout: post
 title: "How to have multiple compiled assets in Rails"
 permalink: /blog/3/how-to-have-multiple-compiled-assets-in-rails
+redirect_from:
+  - /blog/3/
 ---
 
 The default Rails configuration is to have one big application*.js file,
