@@ -8,3 +8,6 @@ url: http://gberger.me
 
 kramdown:
   use_coderay: true
+
+gems:
+  - jekyll-redirect-from

@@ -3,6 +3,7 @@ layout: post
 title: "Laziness (and impatience) leads to hacking"
 description: "Hacking has turned into an everyday skill"
 permalink: /blog/4/laziness-and-impatience-leads-to-hacking
+redirect_from: "/laziness-and-impatience-leads-to-hacking"
 ---
 
 As a student of Computer Engineering, I am taking part in a Brazilian
