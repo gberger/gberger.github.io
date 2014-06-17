@@ -1,0 +1,65 @@
+<style>
+  .large-text-container {
+    font-size: 1.5em;
+  }
+</style>
+
+<div class="large-text-container">
+  <p>
+    <button id="btn-generate" class="pure-button pure-button-primary button-xlarge">Gerar</button>
+    <a id="share-button" class="pure-button pure-button-primary button-xlarge" href="http://twitter.com/share?text=" target="_new">Twittar</a>
+  </p>
+  <blockquote id="sentence"></blockquote>
+</div>
+
+<script>
+  var choose = function(n) {
+    if(+n !== n) {
+      n = n.length;
+    }
+    return Math.floor(Math.random()*n);
+  };
+
+  var chance = function(c) {
+    return Math.random()*100 < c;
+  };
+
+  if (!Array.prototype.map) {
+    Array.prototype.map = function (fn) {
+      var arr = [];
+      for(var i = 0, l = this.length; i < l; i++){
+        arr[i] = fn(this[i]);
+      }
+      return arr;
+    };
+  }
+
+  var setText = function(sentence){
+    document.getElementById('sentence').innerHTML = sentence;
+    document.getElementById('share-button').href = 'http://twitter.com/share?text=' + encodeURIComponent(sentence) + '&url=' + encodeURIComponent(window.location.href);
+  }
+
+  var generate = function(){
+    var indexes = generateIndexes();
+    var sentence = sentenceFromIndexes(indexes);
+    setText(sentence);
+    window.location.hash = indexes;
+    _gaq.push(['_trackEvent', 'demo/humanas-generator', 'generate']);
+  };
+
+  document.getElementById('btn-generate').onclick = generate;
+
+  var recover = function(){
+    var indexes = window.location.hash.substring(1).split(',').map(function(i){
+      return parseInt(i, 10);
+    });
+    var sentence = sentenceFromIndexes(indexes);
+    if(!sentence || sentence === "undefined") {
+      generate();
+    } else {
+      setText(sentence);
+    }
+  };
+
+  setTimeout(recover, 1);
+</script>

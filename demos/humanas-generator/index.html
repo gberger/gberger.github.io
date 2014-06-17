@@ -4,17 +4,6 @@ title: Humanas Generator
 name: humanas-generator
 ---
 
-<style>
-	#btn-generate, #sentence {
-		font-size: 1.5em;
-	}
-</style>
-
-<p>
-	<button id="btn-generate" class="pure-button pure-button-primary button-xlarge">Gerar</button>
-</p>
-<blockquote id="sentence"></blockquote>
-
 <script>
 	var terms = [
 		"História",
@@ -86,27 +75,6 @@ name: humanas-generator
 		}
 	];
 
-	var choose = function(n) {
-		if(+n !== n) {
-			n = n.length;
-		}
-		return Math.floor(Math.random()*n);
-	};
-
-	var chance = function(c) {
-		return Math.random()*100 < c;
-	};
-
-	if (!Array.prototype.map) {
-		Array.prototype.map = function (fn) {
-			var arr = [];
-			for(var i = 0, l = this.length; i < l; i++){
-				arr[i] = fn(this[i]);
-			}
-			return arr;
-		};
-	}
-
 	var sentenceFromIndexes = function(indexes) {
 		return indexes.map(function(idx, i) {
 			if(idx === -1) return '';
@@ -128,28 +96,6 @@ name: humanas-generator
 			return indexes;
 		}, [])
 	};
-
-	var generate = function(){
-		var indexes = generateIndexes();
-		var sentence = sentenceFromIndexes(indexes);
-		document.getElementById('sentence').innerHTML = sentence;
-		window.location.hash = indexes;
-		_gaq.push(['_trackEvent', 'demo/humanas-generator', 'generate']);
-	};
-
-	document.getElementById('btn-generate').onclick = generate;
-
-	var recover = function(){
-		var indexes = window.location.hash.substring(1).split(',').map(function(i){
-			return parseInt(i, 10);
-		});
-		if(indexes.length === ಠ_ಠ.length) {
-			var sentence = sentenceFromIndexes(indexes);
-			document.getElementById('sentence').innerHTML = sentence;
-		} else {
-			generate();
-		}
-	};
-
-	setTimeout(recover, 1);
 </script>
+
+{% include generator-boilerplate.html %}

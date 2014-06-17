@@ -4,17 +4,6 @@ title: Direita Generator
 name: direita-generator
 ---
 
-<style>
-	#btn-generate, #sentence {
-		font-size: 1.5em;
-	}
-</style>
-
-<p>
-	<button id="btn-generate" class="pure-button pure-button-primary button-xlarge">Gerar</button>
-</p>
-<blockquote id="sentence"></blockquote>
-
 <script>
 	var Ѧ = [
 		[
@@ -75,23 +64,6 @@ name: direita-generator
 		]
 	];
 
-	var choose = function(n) {
-		if(+n !== n) {
-			n = n.length;
-		}
-		return Math.floor(Math.random()*n);
-	};
-
-	if (!Array.prototype.map) {
-		Array.prototype.map = function (fn) {
-			var arr = [];
-			for(var i = 0, l = this.length; i < l; i++){
-				arr[i] = fn(this[i], i);
-			}
-			return arr;
-		};
-	}
-
 	var sentenceFromIndexes = function(indexes) {
 		return indexes.map(function(idx, i){
 			return Ѧ[i][idx];
@@ -101,28 +73,6 @@ name: direita-generator
 	var generateIndexes = function() {
 		return Array.apply(null, new Array(Ѧ.length)).map(choose.bind(null, Ѧ.length), true);
 	};
-
-	var generate = function(){
-		var indexes = generateIndexes();
-		var sentence = sentenceFromIndexes(indexes);
-		document.getElementById('sentence').innerHTML = sentence;
-		window.location.hash = indexes;
-		_gaq.push(['_trackEvent', 'demo/direita-generator', 'generate']);
-	};
-
-	document.getElementById('btn-generate').onclick = generate;
-
-	var recover = function(){
-		var indexes = window.location.hash.substring(1).split(',').map(function(i){
-			return parseInt(i, 10);
-		});
-		if(indexes.length === Ѧ.length) {
-			var sentence = sentenceFromIndexes(indexes);
-			document.getElementById('sentence').innerHTML = sentence;
-		} else {
-			generate();
-		}
-	};
-
-	setTimeout(recover, 1);
 </script>
+
+{% include generator-boilerplate.html %}
