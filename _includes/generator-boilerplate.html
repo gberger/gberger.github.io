@@ -1,13 +1,20 @@
+<link rel="stylesheet" href="/css/font-awesome.min.css">
 <style>
-  .large-text-container {
+  .generator-container {
     font-size: 1.5em;
+  }
+  .generator-container i.fa{
+    margin-right: 10px;
+  }
+  .generator-container .button-xlarge {
+    margin-right: 20px;
   }
 </style>
 
-<div class="large-text-container">
+<div class="generator-container">
   <p>
-    <button id="btn-generate" class="pure-button pure-button-primary button-xlarge">Gerar</button>
-    <a id="share-button" class="pure-button pure-button-primary button-xlarge" href="http://twitter.com/share?text=" target="_new">Twittar</a>
+    <a id="btn-generate" class="pure-button pure-button-primary button-xlarge"><i class="fa fa-refresh"></i> Gerar</a>
+    <a id="share-button" class="pure-button pure-button-primary button-xlarge" href="http://twitter.com/share?text=" target="_new"><i class="fa fa-twitter"></i> Twittar</a>
   </p>
   <blockquote id="sentence"></blockquote>
 </div>
