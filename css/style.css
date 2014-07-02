@@ -64,6 +64,7 @@ dl, dd {
 }
 
 dd {
+  padding-bottom: 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -255,5 +256,29 @@ article img {
 #nav li {
   display: inline-block;
   list-style: none;
+  margin: 0;
+}
+
+/* PROJECTS
+ * -------------------- */
+
+ul.links,
+ul.links li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+}
+
+ul.links li:not(:first-child):before {  
+  content: " — ";  
+}
+
+.technologies {
+  font-size: 1.25em;
+}
+
+ul.technologies,
+ul.technologies li {
+  display: inline-block;
   margin: 0;
 }

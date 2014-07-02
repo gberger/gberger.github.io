@@ -1,0 +1,54 @@
+- name: PUC Que Pariu
+  links:
+    - name: Live
+      url: http://pucquepariu.com.br/
+  technologies:
+   - Ruby
+   - NodeJS
+   - Postgres
+   - Heroku
+  description: |
+    Educational website used by 50%+ of 
+    <a href="http://www.puc-rio.br" target="_blank">PUC-Rio</a>'s
+    Engineering students. 
+
+- name: TOAnsioso
+  links:
+    - name: Live
+      url: http://toansioso.herokuapp.com/
+    - name: GitHub
+      url: https://github.com/gberger/toansioso
+    - name: Blog post
+      url: /blog/4/laziness-and-impatience-leads-to-hacking/
+  technologies:
+   - NodeJS
+   - Crawling
+   - Heroku
+
+- name: Humanas Generator
+  links:
+    - name: Live
+      url: /demos/humanas-generator
+    - name: GitHub
+      url: https://github.com/gberger/gberger.github.io/blob/master/demos/humanas-generator/index.html
+  technologies:
+    - JavaScript
+  description: |
+    <em>In Portuguese.</em> 
+    Procedurally generates funny satirical names
+    for imaginary humanities courses.
+
+- name: ghurl
+  links:
+    - name: Live
+      url: http://ghurl.github.io/
+    - name: GitHub
+      url: https://github.com/ghurl/ghurl.github.io
+    - name: Blog post
+      url: http://localhost:4000/blog/5/ghurl-url-shortener/
+  technologies:
+    - JavaScript
+    - GitHub
+  description: |
+    A URL Shortener with no back-end server. 
+    <a href="https://ghurl.github.io/?7">Wut?</a>
