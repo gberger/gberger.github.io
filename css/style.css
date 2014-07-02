@@ -211,6 +211,10 @@ article img {
   margin-right: auto;
 }
 
+.post .date {
+  float: left;
+}
+
 /* ARCHIVE
  * -------------------- */
 
