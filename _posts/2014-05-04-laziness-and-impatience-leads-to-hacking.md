@@ -20,8 +20,8 @@ any notice: you need to log into the system to check if yours is already there.
 
 Obviously, this leads to lots of people freaking out about when they'll finally receive their TOA.
 
-**As a developer, I have the mindset that I have the skills to change the world
-around me for the benefit of me and other people.** When  I am having a problem that
+**As a software engineer, I am confident that I possess the skills to 
+change the world around me for the benefit of myself and others.** When  I am having a problem that
 I know I can solve and that I know other people are having too, this is an opportunity for a developer solution.
 
 So I set off to create a bot that would check whether my TOA had arrived and,
