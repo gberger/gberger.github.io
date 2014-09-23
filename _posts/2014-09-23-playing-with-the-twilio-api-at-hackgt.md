@@ -14,7 +14,7 @@ all the support we needed to get going with their API, which enables you to
 send and receive text messages, media messages and phone calls.
 
 Because of how simple, easy and fun it is to build something using Twilio, 
-I actually ended up building 3 small, sample apps. Click the names too go 
+I actually ended up building 3 small, sample apps. Click the names to go 
 to their GitHub repositories with screenshots and code.
 
 ### [jsms](https://github.com/gberger/jsms)
