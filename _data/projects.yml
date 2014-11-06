@@ -1,42 +1,32 @@
 - name: PUC Que Pariu
   links:
     - name: Live
-      url: http://pucquepariu.com.br/
-  technologies:
-   - Ruby
-   - NodeJS
-   - Postgres
-   - Heroku
+      url: http://pucuqepariu.com.br
+    - name: GitHub
+      url: http://github.com/gberger/pucquepariu
   description: |
     Educational website used by 50%+ of 
     <a href="http://www.puc-rio.br" target="_blank">PUC-Rio</a>'s
-    Engineering students. 
+    Engineering students.  
+    I'm the founder and sole developer, as well as the manager for 12
+    team members.
+  image: /img/puc-que-pariu.png
+  image_link: http://pucquepariu.com.br/
 
-- name: TOAnsioso
+- name: DontUnplug.Me
   links:
     - name: Live
-      url: http://toansioso.herokuapp.com/
+      url: http://dontunplug.me/
     - name: GitHub
-      url: https://github.com/gberger/toansioso
-    - name: Blog post
-      url: /blog/4/laziness-and-impatience-leads-to-hacking/
-  technologies:
-   - NodeJS
-   - Crawling
-   - Heroku
-
-- name: Humanas Generator
-  links:
-    - name: Live
-      url: /demos/humanas-generator
-    - name: GitHub
-      url: https://github.com/gberger/gberger.github.io/blob/master/demos/humanas-generator/index.html
-  technologies:
-    - JavaScript
+      url: http://github.com/gberger/dontunplug.me
+    - name: HackNC HackerLeague
+      url: https://www.hackerleague.org/hackathons/hacknc-fall-2014/hacks/dontunplug-dot-me
   description: |
-    <em>In Portuguese.</em> 
-    Procedurally generates funny satirical names
-    for imaginary humanities courses.
+    Allows you to be notified when someone unplugs your computer's power cord.  
+    Includes pictures of the "thief" via email and SMS.  
+    **Built at HackNC 2014**
+  image: /img/dontunplugme.png
+  image_link: http://dontunplug.me/
 
 - name: ghurl
   links:
@@ -45,10 +35,32 @@
     - name: GitHub
       url: https://github.com/ghurl/ghurl.github.io
     - name: Blog post
-      url: http://localhost:4000/blog/5/ghurl-url-shortener/
-  technologies:
-    - JavaScript
-    - GitHub
+      url: /blog/5/ghurl-url-shortener/
   description: |
     A URL Shortener with no back-end server. 
-    <a href="https://ghurl.github.io/?7">Wut?</a>
+    <a href="https://ghurl.github.io/?6">Wut?</a>
+  image: /img/ghurl.png
+  image_link: http://ghurl.github.io/
+
+- name: Twilio Toys
+  links:
+    - name: Blog post
+      url: /blog/6/playing-with-the-twilio-api-at-hackgt/
+    - name: jsms
+      url: https://github.com/gberger/jsms
+    - name: immsgur
+      url: https://github.com/gberger/immsgur
+    - name: randwilio
+      url: https://github.com/gberger/randwilio
+  description: |
+    I explored Twilio's API and built some cool hacks with it.  
+    **Built at HackGT 2014**
+  image: /img/twilio.png
+  image_link: /blog/6/playing-with-the-twilio-api-at-hackgt/
+
+- name: School Projects
+  description: |
+    <a href="https://github.com/search?p=1&q=user%3Agberger+COMP+OR+INF&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank">
+    I host all my school projects on GitHub</a>.
+  image: /img/unc.jpg
+  image_link: https://github.com/search?p=1&q=user%3Agberger+COMP+OR+INF&ref=searchresults&type=Repositories&utf8=%E2%9C%93

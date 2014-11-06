@@ -4,40 +4,32 @@ title: Projects
 name: projects
 ---
 
-<link rel="stylesheet" href="/css/font-mfizz.css">
-
 <dl>
 	{% for project in site.data.projects %}
 		<dt>{{project.name}}</dt>
-		<dd>
-			{% if project.links.size > 0 %}
-				<p>
+		<dd class="media">
+			{% if project.image %}
+				<a href="{{ project.image_link }}" target="_blank" class="img">
+					<img class="project-image" src="{{ project.image }}" alt="">
+				</a>
+			{% endif %}
+			<div class="bd">
+				{% if project.description %}
+					{{ project.description | markdownify }}
+				{% endif %}
+				{% if project.links.size > 0 %}
 					<ul class="links">
 						{% for link in project.links %}
 						<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
 						{% endfor %}
 					</ul>
-				</p>
-			{% endif %}
-			{% if project.description %}
-				<p>
-					{{ project.description }}
-				</p>
-			{% endif %}
-			{% if project.technologies.size > 0 %}
-				<p>
-					<ul class="technologies">
-						{% for technology in project.technologies %}
-							<li><i title="{{ technology }}" class="{{ site.data.technologies[technology] }}"></i></li>
-						{% endfor %}
-					</ul>
-				</p>
-			{% endif %}
+				{% endif %}
+			</div>
 		</dd>
 	{% endfor %}
 
 	<dt><a href="http://github.com/gberger" target="_blank">Other projects on GitHub</a></dt>
-	<dd></dd>
+	<dd>I love open source! I've contributed to a few libraries and published some of my own.</dd>
 </dl>
 
 {% include nav-bottom.html %}
