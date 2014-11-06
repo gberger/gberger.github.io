@@ -276,6 +276,14 @@ ul.links li:not(:first-child):before {
 .media .img img{display:block;}
 .media .bd p {margin-top:0; margin-bottom: 0.5em;}
 
-.project-image {
-  max-width: 10em;
+@media screen and (min-width:960px) {
+  .project-image {
+    max-width: 10em;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .project-image {
+    max-width: 6em;
+  }
 }
