@@ -9,9 +9,7 @@ redirect_from:
 *This was an internal email I wrote to the frontend team at [VTEX](http://lab.vtex.com/)
 in an effort to consolidate our Bower practices, originally published on 29 Jul 2013.*
 
-> [Bower](https://github.com/bower/bower) is a package manager for the web.
-
-Bower functions by downloading components that your project depends on. These dependencies are defined in a `bower.json` file. Each dependency is either: 
+[Bower](https://github.com/bower/bower) is a "package manager for the web". It functions by downloading components that your project depends on, like jQuery or Underscore. These dependencies are defined in a `bower.json` file. Each dependency is either: 
 
  - a name that maps to a package registered with Bower, e.g, `jquery`
  - a remote Git endpoint, e.g., git://github.com/someone/some-package.git, which can be public or private
