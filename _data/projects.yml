@@ -19,7 +19,7 @@
       url: http://dontunplug.me/
     - name: GitHub
       url: http://github.com/gberger/dontunplug.me
-    - name: HackNC HackerLeague
+    - name: Blog post
       url: https://www.hackerleague.org/hackathons/hacknc-fall-2014/hacks/dontunplug-dot-me
   description: |
     Allows you to be notified when someone unplugs your computer's power cord.  
@@ -53,14 +53,14 @@
     - name: randwilio
       url: https://github.com/gberger/randwilio
   description: |
-    I explored Twilio's API and built some cool hacks with it.  
-    **Built at HackGT 2014**
+    I explored Twilio's API and built some cool hacks with it at **HackGT 2014**.
   image: /img/twilio.png
   image_link: /blog/6/playing-with-the-twilio-api-at-hackgt/
 
 - name: School Projects
   description: |
-    <a href="https://github.com/search?p=1&q=user%3Agberger+COMP+OR+INF&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank">
-    I host all my school projects on GitHub</a>.
+    I host all my school projects for PUC-Rio and UNC on 
+    <a href="https://github.com/search?p=1&q=user%3Agberger+COMP+OR+INF&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank">GitHub</a>.
   image: /img/unc.jpg
   image_link: https://github.com/search?p=1&q=user%3Agberger+COMP+OR+INF&ref=searchresults&type=Repositories&utf8=%E2%9C%93
+

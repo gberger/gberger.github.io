@@ -259,6 +259,10 @@ article img {
 /* PROJECTS
  * -------------------- */
 
+.media .bd {
+  padding-left: 1em;
+}
+
 ul.links,
 ul.links li {
   display: inline-block;
