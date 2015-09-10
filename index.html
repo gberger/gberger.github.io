@@ -42,26 +42,7 @@ description: Guilherme Berger - Software Engineer, Hacker, Student.
 
 <dl>
 	{% for project in site.data.projects %}
-		<dt>{{project.name}}</dt>
-		<dd class="media">
-			{% if project.image %}
-				<a href="{{ project.image_link }}" target="_blank" class="img">
-					<img class="project-image" src="{{ project.image }}" alt="">
-				</a>
-			{% endif %}
-			<div class="bd">
-				{% if project.description %}
-					{{ project.description | markdownify }}
-				{% endif %}
-				{% if project.links.size > 0 %}
-					<ul class="links">
-						{% for link in project.links %}
-						<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
-						{% endfor %}
-					</ul>
-				{% endif %}
-			</div>
-		</dd>
+		{% include project-list.html %}
 	{% endfor %}
 </dl>
 
@@ -70,26 +51,7 @@ description: Guilherme Berger - Software Engineer, Hacker, Student.
 
 <dl>
 	{% for project in site.data.hacks %}
-		<dt>{{project.name}}</dt>
-		<dd class="media">
-			{% if project.image %}
-				<a href="{{ project.image_link }}" target="_blank" class="img">
-					<img class="project-image" src="{{ project.image }}" alt="">
-				</a>
-			{% endif %}
-			<div class="bd">
-				{% if project.description %}
-					{{ project.description | markdownify }}
-				{% endif %}
-				{% if project.links.size > 0 %}
-					<ul class="links">
-						{% for link in project.links %}
-						<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
-						{% endfor %}
-					</ul>
-				{% endif %}
-			</div>
-		</dd>
+		{% include project-list.html %}
 	{% endfor %}
 </dl>
 
