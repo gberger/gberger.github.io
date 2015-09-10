@@ -8,9 +8,9 @@ redirect_from:
 
 Among the many products sold at the [Github Store](http://shop.github.com/){:target="_blank"},
 the [Octodex Sticker Packs](http://shop.github.com/products/octodex-sticker-pack){:target="_blank"}
- re probably some of the most popular items. Each pack contains 10 different
- Octocat](http://octodex.github.com/){:target="_blank"} stickers and costs $5. If you're a lover of
- the mascot (who isn't?), you'd probably be inclined to buy a pack or three.
+are probably some of the most popular items. Each pack contains 10 different
+[Octocat](http://octodex.github.com/){:target="_blank"} stickers and costs $5. If you're a lover of
+the mascot (who isn't?), you'd probably be inclined to buy a pack or three.
 
 I purchased 3 packs a couple weeks ago, for a total of $15 plus $5 to account for shipping to
 Brazil. When the package arrived, I noticed the USPS label said the shipping cost $35.65.
