@@ -38,7 +38,7 @@ description: Guilherme Berger - Software Engineer, Hacker, Student.
 
 <hr>
 
-<h2>Projects, Hacks and Open Source</h2>
+<h2>Personal Projects</h2>
 
 <dl>
 	{% for project in site.data.projects %}
@@ -63,11 +63,44 @@ description: Guilherme Berger - Software Engineer, Hacker, Student.
 			</div>
 		</dd>
 	{% endfor %}
-
-	<dt><a href="http://github.com/gberger" target="_blank">Other projects on GitHub</a></dt>
-	<dd>
-		<p>I love open source! I've contributed to a few libraries and published some of my own. 
-		Every new project I started gets published on GitHub.</p>
-		<p>Even <a href="https://github.com/gberger/gberger.github.io" target="_blank">this site is open source</a>!</p>
-	</dd>
 </dl>
+
+	
+<h2>Hacks</h2>
+
+<dl>
+	{% for project in site.data.hacks %}
+		<dt>{{project.name}}</dt>
+		<dd class="media">
+			{% if project.image %}
+				<a href="{{ project.image_link }}" target="_blank" class="img">
+					<img class="project-image" src="{{ project.image }}" alt="">
+				</a>
+			{% endif %}
+			<div class="bd">
+				{% if project.description %}
+					{{ project.description | markdownify }}
+				{% endif %}
+				{% if project.links.size > 0 %}
+					<ul class="links">
+						{% for link in project.links %}
+						<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</div>
+		</dd>
+	{% endfor %}
+</dl>
+
+
+<h2>Open Source</h2>
+
+<p>
+	I love open source! I've contributed to a few libraries and published some of my own.<br>
+	Every new project I start gets published on <b><a href="http://github.com/gberger">my GitHub</a></b>.
+</p>
+<p>
+	I also host all my school projects for PUC-Rio and UNC on 
+    <a href="https://github.com/search?p=1&q=user%3Agberger+COMP+OR+INF&ref=searchresults&type=Repositories&utf8=%E2%9C%93" target="_blank">GitHub</a>.
+</p>

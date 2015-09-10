@@ -1,0 +1,42 @@
+- name: ghurl
+  links:
+    - name: Live
+      url: http://ghurl.github.io/
+    - name: GitHub
+      url: https://github.com/ghurl/ghurl.github.io
+    - name: Blog post
+      url: /blog/5/ghurl-url-shortener/
+  description: |
+    A URL Shortener with no back-end server. 
+    <a href="https://ghurl.github.io/?6">Wut?</a>
+  image: /img/ghurl.png
+  image_link: http://ghurl.github.io/
+
+- name: DontUnplug.Me - HackNC 2014
+  links:
+    - name: Live
+      url: http://dontunplug.me/
+    - name: GitHub
+      url: http://github.com/gberger/dontunplug.me
+    - name: Blog post
+      url: https://www.hackerleague.org/hackathons/hacknc-fall-2014/hacks/dontunplug-dot-me
+  description: |
+    Allows you to be notified when someone unplugs your computer's power cord.  
+    Includes pictures of the "thief" via email and SMS. 
+  image: /img/dontunplugme.png
+  image_link: http://dontunplug.me/
+
+- name: Twilio - HackGT 2014
+  links:
+    - name: Blog post
+      url: /blog/6/playing-with-the-twilio-api-at-hackgt/
+    - name: jsms
+      url: https://github.com/gberger/jsms
+    - name: immsgur
+      url: https://github.com/gberger/immsgur
+    - name: randwilio
+      url: https://github.com/gberger/randwilio
+  description: |
+    I explored Twilio's API and built some cool hacks with it.
+  image: /img/twilio.png
+  image_link: /blog/6/playing-with-the-twilio-api-at-hackgt/
