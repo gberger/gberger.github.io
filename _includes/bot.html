@@ -1,6 +1,7 @@
 	<script src="/js/d3.v3.min.js"></script>
 	<script src="/js/trianglify.min.js"></script>
 	<script>
+		// Activate Trianglify
 		setTimeout(function() {
 			var t = new Trianglify({noiseIntensity: 0});
 			var pattern;
@@ -11,6 +12,15 @@
 			}
 			document.body.parentNode.setAttribute('style', 'background-image: ' + pattern.dataUrl);
 		}, 1);
+
+		// Open external links in new tabs
+		var links = document.querySelectorAll('a');
+		for (var i = 0; i < links.length; i++) {
+			var link = links[i];
+			if (link.href.indexOf('http') === 0) {
+				link.target = "_blank";
+			}
+		}
 	</script>
 
 </body>

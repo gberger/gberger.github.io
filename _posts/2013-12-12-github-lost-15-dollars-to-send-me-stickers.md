@@ -6,10 +6,10 @@ redirect_from:
   - /blog/1/
 ---
 
-Among the many products sold at the [Github Store](http://shop.github.com/){:target="_blank"},
-the [Octodex Sticker Packs](http://shop.github.com/products/octodex-sticker-pack){:target="_blank"}
+Among the many products sold at the [Github Store](http://shop.github.com/),
+the [Octodex Sticker Packs](http://shop.github.com/products/octodex-sticker-pack)
 are probably some of the most popular items. Each pack contains 10 different
-[Octocat](http://octodex.github.com/){:target="_blank"} stickers and costs $5. If you're a lover of
+[Octocat](http://octodex.github.com) stickers and costs $5. If you're a lover of
 the mascot (who isn't?), you'd probably be inclined to buy a pack or three.
 
 I purchased 3 packs a couple weeks ago, for a total of $15 plus $5 to account for shipping to
