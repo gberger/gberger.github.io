@@ -32,7 +32,7 @@ Then, a link is sent to your trusted friends via SMS. This links enables them to
 
 ![](/img/hackpuc-2.png)
 
-_ "In danger since 11:17:00" / "Last updatedat 11:17:40" / [current address] _
+<i> "In danger since 11:17:00" / "Last updated at 11:17:40" / [current address] </i>
 
 As soon as you are safe, you should type in your passcode so your friends know that you are safe once again. This deactivates the tracking, but your location history and recorded audio will still be stored in our servers as they can be handed over to police by you to help with an investigation.
 
