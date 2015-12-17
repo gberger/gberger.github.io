@@ -17,7 +17,7 @@ College hackathons are only now beginning to spring up in Brazil, after seeing i
 
 PUC-Rio's beautiful campus was home to 120 hackers who for 36 hours ate pizza, drank Red Bull, played arcade games, slept on beanie bags, and, of course, hacked on 30 amazing projects.
 
-The themes were politics, safety, and sports. These are very much in line with current topics in Brazil: corruption scandals and political instabilities plague the cuntry, while the Olympic Games are set to come to Rio in 2016, a city known to be more dangerous than usual. 
+The themes were politics, safety, and sports. These are very much in line with current topics in Brazil: corruption scandals and political instabilities plague the country, while the Olympic Games are set to come to Rio in 2016, a city known to be more dangerous than usual. 
 
 
 ## Our Project
