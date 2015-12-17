@@ -7,7 +7,7 @@ description: Guilherme Berger's personal site and blog
 url: http://gberger.me
 
 kramdown:
-  use_coderay: true
+  enable_coderay: true
 
 gems:
   - jekyll-redirect-from
