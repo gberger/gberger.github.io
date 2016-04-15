@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="/css/buttons-min.css">
 	<link href="/feed.xml" rel="alternate" type="application/rss+xml" title="RSS Feed" />
 	<meta name="descrption" content="{{page.description}}">
-	{% if page.ogimage != null %}
+	{% if page.ogimage %}
 		<meta property="og:image" content="http://gberger.me/img/thumb.png" />
 	{% else %}
 		<meta property="og:image" content="http://gberger.me/{{page.ogimage}}" />
