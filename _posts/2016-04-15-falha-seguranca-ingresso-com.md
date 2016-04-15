@@ -23,11 +23,11 @@ Eu desenvolvi um pequeno programa que realiza o procedimento descrito acima, mos
 
 Observe o resultado do programa depois de alguns poucos segundos:
 
-![](/img/posts/poc1.png)
+<a href="/img/posts/poc1.png"><img src="/img/posts/poc1.png"></a>
 
 O código censurado é o código do ingresso. Agora basta substituir o código no endereço de uma página de impressão de ingresso. Note que o nome e RG do comprador foi escondido, assim como a informação de que a entrada é "Meia Itaú" (o que também pode expor dados pessoais importantes), mas na página real estes dados estão expostos.
 
-![](/img/posts/ingresso1.png)
+<a href="/img/posts/ingresso1.png"><img src="/img/posts/ingresso1.png"></a>
 
 Caso o ingresso interesse ao criminoso, basta imprimí-lo e levar ao cinema, teatro ou show. Se ele chegar antes do cliente real, o código de barras será validado e ele terá acesso ao evento, enquanto o cliente ficará de fora e sofrerá constrangimento.
 
