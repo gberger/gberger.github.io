@@ -37,7 +37,7 @@ Observo que também é trivial para o criminoso alterar os dados pessoais na fac
 ## A falha é conhecida pela empresa
 
 
-Em visita ao escritório da Ingresso.com, no Centro do Rio, em janeiro deste ano, mostrei a falha a um funcionário de alto cargo na área de segurança da informação da empresa. Ele comentou que a falha era conhecida havia meses, mas que estavam com problemas internos no processo de correção.
+Em visita ao escritório da Ingresso.com, no Centro do Rio, em janeiro deste ano, **mostrei a falha a um funcionário de alto cargo na área de segurança da informação da empresa**. Ele comentou que a falha era conhecida havia meses, mas que estavam com problemas internos no processo de correção.
 
 Depois de ter comunicado aos responsáveis sobre a falha e nada ter sido feito, acredito que é meu dever escrever este artigo para alertar os consumidores sobre este risco. Eu não usei os ingressos e os dados pessoais em meu benefício, assim como não divulguei a URL específica que dá acesso à lista de ingressos, pois meu objetivo não é causar danos à empresa, muito menos a seus clientes. 
 
