@@ -7,7 +7,7 @@ redirect_from:
   - /blog/10/
 ---
 
-Se você já usou a [Ingresso.com](https://www.ingresso.com) para comprar ingressos de cinema, teatro e shows, saiba que você corre risco de não conseguir entrar no evento por ter tido seu ingresso roubado digitalmente. **Pior: seus dados pessoais como nome, CPF, RG estão expostos na internet.**
+Se você usa a [Ingresso.com](https://www.ingresso.com) para comprar ingressos de cinema, teatro e shows, saiba que você corre risco de não conseguir entrar no evento por ter tido seu ingresso roubado digitalmente. **Pior: seus dados pessoais como nome, CPF, RG estão expostos na internet.**
 
 Isso é porque existe uma óbvia falha de segurança na Ingresso.com que permite que qualquer pessoa tenha acesso à lista de ingressos de outros usuários ao acessar uma página da web.
 
