@@ -2,7 +2,7 @@
 layout: post
 title: "Falha de segurança na Ingresso.com vaza ingressos e informações pessoais"
 permalink: /blog/10/falha-seguranca-ingresso-com
-ogimage: /img/posts/poc.png
+ogimage: /img/posts/poc1.png
 redirect_from:
   - /blog/10/
 ---
@@ -23,7 +23,7 @@ Eu desenvolvi um pequeno programa que realiza o procedimento descrito acima, mos
 
 Observe o resultado do programa depois de alguns poucos segundos:
 
-![](/img/posts/poc.png)
+![](/img/posts/poc1.png)
 
 O código censurado é o código do ingresso. Agora basta substituir o código no endereço de uma página de impressão de ingresso. Note que o nome e RG do comprador foi escondido, assim como a informação de que a entrada é "Meia Itaú" (o que também pode expor dados pessoais importantes), mas na página real estes dados estão expostos.
 
