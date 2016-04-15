@@ -17,7 +17,7 @@ Aí, basta acessar o endereço web de um dos ingressos para poder imprimí-lo. E
 
 
 
-## A falha em ação
+## O criminoso em ação
 
 Eu desenvolvi um pequeno programa que realiza o procedimento descrito acima, mostrando como é trivial abusar da falha.
 
@@ -29,9 +29,9 @@ O código censurado é o código do ingresso. Agora basta substituir o código n
 
 ![](/img/posts/ingresso1.png)
 
-Caso o ingresso interesse ao criminoso, basta imprimí-lo e levar ao cinema, teatro ou show. Caso ele chegue antes que o cliente real, o código de barras será validado e ele terá acesso ao evento, enquanto o cliente ficará de fora e sofrerá constrangimento.
+Caso o ingresso interesse ao criminoso, basta imprimí-lo e levar ao cinema, teatro ou show. Se ele chegar antes do cliente real, o código de barras será validado e ele terá acesso ao evento, enquanto o cliente ficará de fora e sofrerá constrangimento.
 
-Observo que também é trivial para o criminoso alterar os dados pessoais na face do ingresso para os seus próprios, evitando que o funcionário responsável suspeite de sua má conduta.
+Observe que também é trivial para o criminoso alterar os dados pessoais na face do ingresso para os seus próprios, evitando que o funcionário responsável suspeite de sua má conduta.
 
 
 ## A falha é conhecida pela empresa
