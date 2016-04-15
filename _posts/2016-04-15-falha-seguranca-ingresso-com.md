@@ -4,6 +4,7 @@ title: "Falha de segurança na Ingresso.com vaza ingressos e informações pesso
 permalink: /blog/10/falha-seguranca-ingresso-com
 redirect_from:
   - /blog/10/
+ogimage: /img/posts/poc.png
 ---
 
 Se você já usou a [Ingresso.com](https://www.ingresso.com) para comprar ingressos de cinema, teatro e shows, saiba que você corre risco de não conseguir entrar no evento por ter tido seu ingresso roubado digitalmente. **Pior: seus dados pessoais como nome, CPF, RG estão expostos na internet.**
