@@ -6,7 +6,7 @@ redirect_from:
   - /blog/10/
 ---
 
-Se você já usou a Ingresso.com para comprar ingressos de cinema, teatro e shows, saiba que você corre risco de não conseguir entrar no evento por ter tido seu ingresso roubado digitalmente. Pior: seus dados pessoas como nome, CPF, RG estão expostos na internet.
+Se você já usou a [Ingresso.com](https://www.ingresso.com) para comprar ingressos de cinema, teatro e shows, saiba que você corre risco de não conseguir entrar no evento por ter tido seu ingresso roubado digitalmente. **Pior: seus dados pessoais como nome, CPF, RG estão expostos na internet.**
 
 Isso é porque existe uma óbvia falha de segurança na Ingresso.com que permite que qualquer pessoa tenha acesso à lista de ingressos de outros usuários ao acessar uma página da web.
 
@@ -38,7 +38,7 @@ Observo que também é trivial para o criminoso alterar os dados pessoais na fac
 
 Em visita ao escritório da Ingresso.com, no Centro do Rio, em janeiro deste ano, mostrei a falha a um funcionário de alto cargo na área de segurança da informação da empresa. Ele comentou que a falha era conhecida havia meses, mas que estavam com problemas internos no processo de correção.
 
-Depois de ter comunicado aos responsáveis sobre a falha e nada ter sido feito, acredito que é meu dever escrever este artigo para alertar os consumidores sobre este risco. Eu não usei os ingressos e os dados pessoas em meu benefício, assim como não divulguei a URL específica que dá acesso à lista de ingressos, pois meu objetivo não é causar danos à empresa, muito menos a seus clientes. 
+Depois de ter comunicado aos responsáveis sobre a falha e nada ter sido feito, acredito que é meu dever escrever este artigo para alertar os consumidores sobre este risco. Eu não usei os ingressos e os dados pessoais em meu benefício, assim como não divulguei a URL específica que dá acesso à lista de ingressos, pois meu objetivo não é causar danos à empresa, muito menos a seus clientes. 
 
 Mas assim como eu tomei conhecimento da falha, criminosos também poderiam estar cientes dela, mesmo antes de eu ter publicado este artigo. Isto é: é muito provável que esta falha esteja sendo ativamente usada por criminosos.
 
