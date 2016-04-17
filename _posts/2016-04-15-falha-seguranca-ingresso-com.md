@@ -7,6 +7,29 @@ redirect_from:
   - /blog/10/
 ---
 
+
+### Edit em 17 de abril, 12:45
+
+Desde ontem venho conversando com um desenvolvedor da Ingresso por email e agora fui
+informado de que a falha de segurança foi corrigida.
+
+Seguindo princípios de responsible disclosure, o código que eu criei, mencionado no texto,
+está disponível em [meu GitHub](https://github.com/gberger/ingresso.hack).
+
+Obrigado a todos que compartilharam, pois foi graças à ampla divulgação que conseguimos
+chamar a atenção da empresa para o problema -- **coisa que uma visita ao escritório do diretor
+de segurança da informação da empresa há 3 meses não conseguiu.**
+
+Sinceramente espero que a Ingresso.com se responsabilize e divulgue nota prestando esclarecimento 
+sobre o vazamento. Não fazê-lo é egoísta, irresponsável e antiético, além de ir contra os 
+[princípios de privacidade](http://www.ingresso.com/rio-de-janeiro/home/institucional/privacidade-seguranca)
+da empresa. Os clientes tem direito de saber que suas informações vazaram.
+
+----
+
+### Texto Original
+
+
 Se você usa a [Ingresso.com](https://www.ingresso.com) para comprar ingressos de cinema, teatro e shows, saiba que você corre risco de não conseguir entrar no evento por ter tido seu ingresso roubado digitalmente. **Pior: seus dados pessoais como nome, CPF, RG estão expostos na internet.**
 
 Isso é porque existe uma óbvia falha de segurança na Ingresso.com que permite que qualquer pessoa tenha acesso à lista de ingressos de outros usuários ao acessar uma página da web.
