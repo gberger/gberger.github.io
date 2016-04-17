@@ -9,7 +9,7 @@ redirect_from:
 
 ---
 
-### Edit em 17 de abril, 12:45
+### Atualização em 17 de abril, 12:45
 
 Desde ontem venho conversando com um desenvolvedor da Ingresso por email e agora fui
 informado de que a falha de segurança foi corrigida.
