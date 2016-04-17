@@ -1,6 +1,6 @@
 hightlighter: pygments
 markdown: kramdown
-permalink: /blog/:title
+permalink: /blog/:title/
 
 name: Guilherme Berger
 description: Guilherme Berger's personal site and blog

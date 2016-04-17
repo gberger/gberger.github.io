@@ -5,7 +5,7 @@
     - name: GitHub
       url: https://github.com/ghurl/ghurl.github.io
     - name: Blog post
-      url: /blog/5/ghurl-url-shortener/
+      url: /blog/5/ghurl-url-shortener
   description: |
     A URL Shortener with no back-end server. 
     <a href="https://ghurl.github.io/?6">Wut?</a>
@@ -29,7 +29,7 @@
 - name: Twilio - HackGT 2014
   links:
     - name: Blog post
-      url: /blog/6/playing-with-the-twilio-api-at-hackgt/
+      url: /blog/6/playing-with-the-twilio-api-at-hackgt
     - name: jsms
       url: https://github.com/gberger/jsms
     - name: immsgur
@@ -39,4 +39,4 @@
   description: |
     I explored Twilio's API and built some cool hacks with it.
   image: /img/twilio.png
-  image_link: /blog/6/playing-with-the-twilio-api-at-hackgt/
+  image_link: /blog/6/playing-with-the-twilio-api-at-hackgt
