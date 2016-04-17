@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Our (old) Bower workflow at VTEX"
-permalink: /blog/7/our-bower-workflow-at-vtex
+permalink: /blog/7/our-bower-workflow-at-vtex/
 redirect_from:
   - /blog/7/
 ---

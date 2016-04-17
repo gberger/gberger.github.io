@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Our safety app got 1st place at HackPUC!"
-permalink: /blog/9/hackpuc
+permalink: /blog/9/hackpuc/
 redirect_from:
   - /blog/9/
 ---

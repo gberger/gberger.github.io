@@ -2,7 +2,7 @@
 layout: post
 title: "ghurl URL Shortener"
 description: "A URL Shortener with no back-end server"
-permalink: /blog/5/ghurl-url-shortener
+permalink: /blog/5/ghurl-url-shortener/
 redirect_from:
   - /blog/5/
 ---

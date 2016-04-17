@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Falha de segurança na Ingresso.com vaza ingressos e informações pessoais"
-permalink: /blog/10/falha-seguranca-ingresso-com
+permalink: /blog/10/falha-seguranca-ingresso-com/
 ogimage: /img/posts/poc1.png
 redirect_from:
   - /blog/10/

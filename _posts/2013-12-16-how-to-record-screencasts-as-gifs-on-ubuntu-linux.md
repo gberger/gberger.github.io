@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to record screencasts as GIFs on Ubuntu/Linux"
-permalink: /blog/2/how-to-record-screencasts-as-gifs-on-ubuntu-linux
+permalink: /blog/2/how-to-record-screencasts-as-gifs-on-ubuntu-linux/
 redirect_from:
   - /blog/2/
 ---

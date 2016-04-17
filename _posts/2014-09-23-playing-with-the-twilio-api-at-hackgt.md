@@ -2,7 +2,7 @@
 layout: post
 title: "Playing with the Twilio API at HackGT"
 description: "During HackGT, I built 3 apps using Twilio's API"
-permalink: /blog/6/playing-with-the-twilio-api-at-hackgt
+permalink: /blog/6/playing-with-the-twilio-api-at-hackgt/
 redirect_from:
   - /blog/6/
 ---
