@@ -58,7 +58,8 @@ Desde ontem venho conversando com um desenvolvedor da Ingresso por email e agora
 informado de que a falha de segurança foi corrigida.
 
 Seguindo princípios de responsible disclosure, o código que eu criei, mencionado no texto,
-está disponível em [meu GitHub](https://github.com/gberger/ingresso.hack).
+está disponível em [meu GitHub](https://github.com/gberger/ingresso.hack). Lá você também
+pode encontrar detalhes técnicos da falha.
 
 Obrigado a todos que compartilharam, pois foi graças à ampla divulgação que conseguimos
 chamar a atenção da empresa para o problema -- **coisa que uma visita ao escritório do diretor
