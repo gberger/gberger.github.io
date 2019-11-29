@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 The default Rails configuration is to have one big application*.js file,
-containing all your scripts, including those that are specific to admin pages.
+containing all your scripts, including those that are specific to admin pages
 
 Users that are not admins will still be loading the admin scripts.
 There are a few problems with this:
